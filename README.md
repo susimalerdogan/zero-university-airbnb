@@ -28,7 +28,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000), enter `Plan a weekend in Kyoto for two`, and send the message.
 
-## Test the error state
+## Error and retry state
+
+Trigger the public failure path at https://susimalerdogan.github.io/zero-university-airbnb/?fail=once and submit `Plan a weekend in Kyoto for two`.
+
+The first attempt displays a friendly error bubble with a **Try again** button instead of exposing a raw error. Selecting **Try again** reruns the request and loads the three recommendation cards.
+
+![Kyoto Weekend Planner error and retry state](./public/kyoto-trip-planner-error.png)
+
+To test the same flow locally:
 
 1. Open [http://localhost:3000/?fail=once](http://localhost:3000/?fail=once).
 2. Send `Plan a weekend in Kyoto for two`.
@@ -42,7 +50,7 @@ npm run build
 npm run screenshot
 ```
 
-The screenshot command launches the installed Google Chrome browser in headless mode and refreshes `public/kyoto-trip-planner.png` from the successful chat state.
+The screenshot command launches the installed Google Chrome browser in headless mode and refreshes both `public/kyoto-trip-planner.png` for the successful chat state and `public/kyoto-trip-planner-error.png` for the forced failure state.
 
 ## Deployment
 

@@ -22,4 +22,15 @@ await page.evaluate(() => {
   }
 });
 await page.screenshot({ path: "public/kyoto-trip-planner.png", fullPage: true });
+
+const errorPage = await browser.newPage();
+await errorPage.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
+await errorPage.goto("http://localhost:3000/?fail=once", { waitUntil: "networkidle0" });
+await errorPage.type("#trip-message", "Plan a weekend in Kyoto for two");
+await errorPage.click('button[type="submit"]');
+await errorPage.waitForFunction(() =>
+  document.body.textContent?.includes("Sorry, I couldn’t put your Kyoto weekend together just now."),
+);
+await errorPage.screenshot({ path: "public/kyoto-trip-planner-error.png", fullPage: true });
+
 await browser.close();
