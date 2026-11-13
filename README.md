@@ -2,6 +2,8 @@
 
 A responsive trip-planning chatbot built with Next.js, TypeScript, Tailwind CSS 4 and daisyUI 5. The interface turns a Kyoto weekend request into three distinct recommendation cards while exposing clear loading, success and retry states.
 
+**Live demo:** https://susimalerdogan.github.io/zero-university-airbnb/
+
 ![Kyoto Weekend Planner interface](./public/kyoto-trip-planner.png)
 
 ## Features
@@ -41,6 +43,10 @@ npm run screenshot
 ```
 
 The screenshot command launches the installed Google Chrome browser in headless mode and refreshes `public/kyoto-trip-planner.png` from the successful chat state.
+
+## Deployment
+
+Every push to `main` runs `.github/workflows/deploy-pages.yml`, creates a static Next.js export and deploys the `out` directory to GitHub Pages.
 
 ## Stack
 

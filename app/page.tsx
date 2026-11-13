@@ -1,11 +1,10 @@
+import { Suspense } from "react";
 import { TripPlanner } from "@/components/trip-planner";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ fail?: string }>;
-}) {
-  const { fail } = await searchParams;
-
-  return <TripPlanner failOnce={fail === "once"} />;
+export default function Home() {
+  return (
+    <Suspense fallback={null}>
+      <TripPlanner />
+    </Suspense>
+  );
 }

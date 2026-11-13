@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   ArrowUp,
   CalendarDays,
@@ -100,7 +101,9 @@ function ThinkingBubble() {
   );
 }
 
-export function TripPlanner({ failOnce }: { failOnce: boolean }) {
+export function TripPlanner() {
+  const searchParams = useSearchParams();
+  const failOnce = searchParams.get("fail") === "once";
   const [message, setMessage] = useState("");
   const [submittedMessage, setSubmittedMessage] = useState("");
   const [state, setState] = useState<ChatState>("idle");
