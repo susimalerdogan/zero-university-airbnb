@@ -7,7 +7,7 @@ const browser = await puppeteer.launch({
 });
 
 const page = await browser.newPage();
-await page.setViewport({ width: 1440, height: 1100, deviceScaleFactor: 1 });
+await page.setViewport({ width: 1440, height: 1600, deviceScaleFactor: 1 });
 await page.goto("http://localhost:3000", { waitUntil: "networkidle0" });
 await page.type("#trip-message", "Plan a weekend in Kyoto for two");
 await page.click('button[type="submit"]');

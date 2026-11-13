@@ -27,13 +27,13 @@ function StayCard() {
       <div className="card-body gap-2 p-5 sm:p-6">
         <p className="text-xl font-extrabold tracking-tight sm:text-2xl">11 Apr – 13 Apr 2025 · 2 nights</p>
         <div>
-          <h3 className="font-bold">Machiya townhouse near Gion</h3>
+          <h3 className="font-bold">Restored machiya townhouse near Gion</h3>
           <p className="flex items-center gap-1.5 text-sm text-base-content/60">
-            <MapPin aria-hidden="true" className="size-3.5" /> Kyoto, Japan
+            <MapPin aria-hidden="true" className="size-3.5" /> Entire townhouse · Gion
           </p>
         </div>
-        <p className="font-semibold">$185 USD <span className="font-normal text-base-content/55">/ night</span></p>
-        <p className="text-sm leading-relaxed text-base-content/65">Quiet wooden house, 5 min walk to Yasaka Shrine.</p>
+        <p className="font-semibold">$168 USD <span className="font-normal text-base-content/55">/ night · $366 total</span></p>
+        <p className="text-sm leading-relaxed text-base-content/65">Private garden and cedar soaking tub · Hosted by Kenji · 4.92 from 214 reviews</p>
       </div>
     </article>
   );
@@ -47,20 +47,21 @@ function ExperienceCard() {
       </div>
       <div className="card-body gap-4 p-5 sm:p-6">
         <div>
-          <h3 className="card-title text-xl font-extrabold tracking-tight">Arashiyama Bamboo &amp; Tea Walk</h3>
+          <h3 className="card-title text-xl font-extrabold tracking-tight">Throw a tea bowl in a Kiyomizu pottery studio</h3>
           <p className="mt-1 flex items-center gap-1.5 text-sm text-base-content/55">
-            <Clock3 aria-hidden="true" className="size-3.5" /> 3 hours
+            <Clock3 aria-hidden="true" className="size-3.5" /> 1.5 hours · $72 per guest
           </p>
         </div>
         <div className="space-y-3 text-sm">
           <div className="grid grid-cols-[3.25rem_1fr] gap-3">
             <span className="badge badge-secondary badge-sm font-bold">SAT</span>
-            <p className="leading-relaxed">Bamboo grove, Tenryu-ji garden, matcha tasting</p>
+            <p className="leading-relaxed">12 Apr · 14:00 · Craft experience</p>
           </div>
           <div className="grid grid-cols-[3.25rem_1fr] gap-3">
-            <span className="badge badge-secondary badge-sm font-bold">SUN</span>
-            <p className="leading-relaxed">Fushimi Inari gates at sunrise, then checkout</p>
+            <span className="badge badge-secondary badge-sm font-bold">MEET</span>
+            <p className="leading-relaxed">Gojozaka bus stop, Higashiyama side</p>
           </div>
+          <p className="text-base-content/55">Host details coming soon · 4.84 rating · Spots open</p>
         </div>
       </div>
     </article>
@@ -72,13 +73,14 @@ function FoodCard() {
     <article className="card card-border border-base-300 bg-base-100 shadow-sm">
       <div className="card-body grid grid-cols-[1fr_auto] gap-x-5 p-5 sm:p-6">
         <div>
-          <h3 className="card-title text-xl font-extrabold tracking-tight">Nishiki Market Kaiseki Bar</h3>
-          <p className="mt-2 font-bold text-warning">Dinner · $$$</p>
+          <h3 className="card-title text-xl font-extrabold tracking-tight">Sagano Yudofu-tei</h3>
+          <p className="mt-2 font-bold text-warning">Lunch · Tofu · $$</p>
         </div>
         <div className="flex size-16 items-center justify-center rounded-full bg-base-200 text-base-content/35">
           <Utensils aria-hidden="true" className="size-6" />
         </div>
-        <p className="col-span-2 mt-4 text-sm leading-relaxed text-base-content/65">Seasonal small plates at a 10-seat counter.</p>
+        <p className="col-span-2 mt-4 text-sm leading-relaxed text-base-content/65">$64 estimated for two · Arashiyama · 25 min from stay</p>
+        <p className="col-span-2 mt-1 text-sm font-medium text-base-content/55">Booking details not provided.</p>
       </div>
     </article>
   );

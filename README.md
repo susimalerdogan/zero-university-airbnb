@@ -8,10 +8,11 @@ A responsive trip-planning chatbot built with Next.js, TypeScript, Tailwind CSS 
 
 - Message input and send action lock while the assistant is thinking.
 - Accessible thinking animation with `aria-busy` and a live status message.
-- Three workbook-driven cards in a fixed order:
-  - Stay: Machiya townhouse near Gion
-  - Experience: Arashiyama Bamboo & Tea Walk
-  - Food: Nishiki Market Kaiseki Bar
+- Three cards sourced from one real row per workbook sheet, in a fixed order:
+  - Stay (`Stays!A3:M3`): Restored machiya townhouse near Gion
+  - Experience (`Experiences!A6:L6`): Throw a tea bowl in a Kiyomizu pottery studio
+  - Food (`Food!A4:I4`): Sagano Yudofu-tei
+- Explicit filler copy for empty workbook fields: missing host and booking details.
 - Responsive card layouts that mirror the supplied design specification.
 - Forced one-time failure flow with a working retry action.
 - Reduced-motion support, semantic controls and labelled icon actions.
