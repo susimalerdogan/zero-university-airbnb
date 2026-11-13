@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "kyoto";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(97% 0.004 24);
+  --color-base-300: oklch(91% 0.008 24);
+  --color-base-content: oklch(22% 0.01 24);
+  --color-primary: oklch(63% 0.24 18);
+  --color-primary-content: oklch(99% 0.005 18);
+  --color-secondary: oklch(90% 0.07 300);
+  --color-secondary-content: oklch(45% 0.18 300);
+  --color-accent: oklch(72% 0.16 75);
+  --color-accent-content: oklch(25% 0.06 75);
+  --color-neutral: oklch(27% 0.01 24);
+  --color-neutral-content: oklch(98% 0.004 24);
+  --color-info: oklch(72% 0.13 230);
+  --color-info-content: oklch(22% 0.05 230);
+  --color-success: oklch(70% 0.15 150);
+  --color-success-content: oklch(20% 0.04 150);
+  --color-warning: oklch(70% 0.16 70);
+  --color-warning-content: oklch(22% 0.05 70);
+  --color-error: oklch(62% 0.22 25);
+  --color-error-content: oklch(98% 0.01 25);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+* { scrollbar-width: thin; }
+body { font-family: var(--font-inter), sans-serif; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
